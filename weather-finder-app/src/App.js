@@ -7,7 +7,6 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  // Replace with your own API key
   const API_KEY = 'a86985f88ee1003b68499a07a1f354bf';
 
   const getWeather = async () => {
@@ -46,7 +45,7 @@ function App() {
   return (
     <div className="container">
       <div className="weather-card">
-        <h1>Weather App</h1>
+        <h1>☁️ Weather App</h1>
 
         <input
           type="text"
@@ -63,7 +62,7 @@ function App() {
 
         {weather && (
           <div className="weather-info">
-            <h2>{weather.city}</h2>
+            <h2>City Name: {weather.city}</h2>
             <p>Temperature: {weather.temperature} °C</p>
             <p>Condition: {weather.condition}</p>
           </div>
